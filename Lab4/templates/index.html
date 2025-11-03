@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student and Course Data</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
+        .container { max-width: 800px; margin: 50px auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+        h1 { color: #333; margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        input[type="radio"] { margin-right: 10px; cursor: pointer; }
+        label { margin-right: 20px; cursor: pointer; }
+        input[type="text"] { padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; width: 200px; }
+        input[type="submit"] { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        input[type="submit"]:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search Student or Course</h1>
+        <form method="POST" action="/" id="data-form">
+            <div class="form-group">
+                <input type="radio" name="ID" value="student_id" id="student_radio" />
+                <label for="student_radio">Student ID</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" name="ID" value="course_id" id="course_radio" />
+                <label for="course_radio">Course ID</label>
+            </div>
+            <div class="form-group">
+                <input type="text" name="id_value" placeholder="Enter ID" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
